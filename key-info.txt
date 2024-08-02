@@ -1,0 +1,4 @@
+Aus Sicherheitsgründen können wir keinen API-Key bereitstellen.
+
+Hier kannst du einen Key erstellen:
+ https://developers.google.com/youtube/v3/getting-started?hl=de
