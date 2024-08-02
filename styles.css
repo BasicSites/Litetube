@@ -1,0 +1,186 @@
+/* Grundlegendes Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Styling für den Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    overflow: hidden; /* Um Überlauf des Titels zu verhindern */
+}
+
+#logo {
+    position: absolute;
+    left: 20px; /* Logo auf die linke Seite verschieben */
+    width: 100px; /* Standardgröße des Logos */
+    height: auto;
+    border-radius: 20%; /* Logo um 20% abrunden */
+    transition: all 0.3s ease;
+}
+
+#title {
+    font-size: 2rem;
+    margin-left: 120px; /* Platz für das Logo lassen */
+    transition: transform 0.3s ease, font-size 0.3s ease; /* Animation für Transform */
+    white-space: nowrap;
+    text-align: center; /* Zentriert den Titel */
+    color: #ffffff; /* Weißer Text für besseren Kontrast auf dunklem Hintergrund */
+    font-family: 'Dela Gothic One', sans-serif; /* Ändere dies zu der gewünschten Schriftart */
+    font-weight: bold; /* Fettgedruckter Text für besseren Effekt */
+}
+
+/* Styling für das Hauptinhalt */
+main {
+    padding-top: 120px; /* Platz für den fixierten Header */
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #e0e0e0;
+    border-radius: 5px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5e0000;
+    color: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #d10404;
+}
+
+#videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video {
+    margin: 10px;
+    cursor: pointer;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.video img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video p {
+    margin: 0;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* CSS für den Titel im Header */
+#title {
+    color: #ffffff; /* Weißer Text für besseren Kontrast auf dunklem Hintergrund */
+    font-family: 'Dela Gothic One', sans-serif; /* Ändere dies zu der gewünschten Schriftart */
+    font-size: 2rem; /* Standard Schriftgröße, kann je nach Zustand angepasst werden */
+    font-weight: bold; /* Fettgedruckter Text für besseren Effekt */
+    margin-left: auto; /* Zentriert den Titel horizontal */
+    margin-right: auto; /* Zentriert den Titel horizontal */
+    text-align: center; /* Zentriert den Text innerhalb des Containers */
+    transition: transform 0.3s ease, font-size 0.3s ease; /* Animation für Schriftgröße und Verschiebung */
+}
+
+/* Footer Styling */
+#footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#footer p {
+    margin: 0;
+    font-size: 0.875rem; /* Kleinere Schriftgröße für den Footer */
+}
+
+#footer a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+/* Popup Styling */
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dunkler Hintergrund für das Popup */
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.popup-content {
+    background-color: #1e1e1e; /* Dunkler Hintergrund für den Popup-Inhalt */
+    color: #e0e0e0; /* Heller Text im Popup */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #e0e0e0; /* Heller Text für den Schließen-Button */
+    cursor: pointer;
+}

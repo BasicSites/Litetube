@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiteTube</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dela+Gothic+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <header id="header">
+        <img id="logo" src="https://cdn.discordapp.com/attachments/1243578332759457792/1269005321062580254/7C87C96D8D60D94400C19DED231A4851398C12AF.png?ex=66ae7ccd&is=66ad2b4d&hm=0410101fc915e78fffac2c82553cb5654f34eb6a72b0155fb9571b5df3ebf124&" alt="Logo">
+        <div id="title">LiteTube</div>
+    </header>
+    <main>
+        <input type="text" id="searchQuery" placeholder="Suchbegriff eingeben">
+        <button onclick="searchVideos()">Suchen</button>
+        <div id="videos"></div>
+        <div id="player"></div>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024 BasicSites | <a href="#" id="termsLink">Nutzungsbedingungen</a></p>
+    </footer>
+    <div id="termsPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Nutzungsbedingungen und Datenschutz</h2>
+            <p>Unsere Website verwendet die YouTube API, die von Google bereitgestellt wird. Bitte beachten Sie, dass Google möglicherweise Daten sammelt, die mit der Nutzung der API verbunden sind.</p>
+            <p>BasicSites erhebt keine Daten von Ihnen. Alle gesammelten Daten werden direkt von Google gemäß deren Datenschutzrichtlinien verarbeitet.</p>
+            <p>Weitere Informationen finden Sie in den <a href="https://policies.google.com/privacy" target="_blank">Datenschutzbestimmungen von Google</a>.</p>
+            <p>Um mehr über die API-Nutzungsbedingungen zu erfahren, besuchen Sie bitte die <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service" target="_blank">YouTube API-Nutzungsbedingungen</a>.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
