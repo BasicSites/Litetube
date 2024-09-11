@@ -2,4 +2,7 @@
 # Litetube
 Simpler YouTube Streamer
 
+Hier ist ein Beispiel, was man aus LiteTube machen könnte:
+- litetube.ddns.net
+
 ![image](https://github.com/user-attachments/assets/b30401e3-a4f3-4dd9-909e-d770b3ba41e3)
