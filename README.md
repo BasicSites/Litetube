@@ -5,10 +5,6 @@
 # Litetube
 Simpler YouTube Streamer
 
-## Unsere Version
-
-Hier ist ein Beispiel, was man aus LiteTube machen könnte:
-- [LiteTube](http://litetube.ddns.net/)
 
 ## Template Version 
 Der hier gezeigte Code ist nur eine Template und wird deshalb wenige bis keine visuellen updates erhalten.
